@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Make Your Own Bouquet 💐</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg"></canvas>
+<div class="toast" id="toast"></div>
+
+<section id="intro" class="screen">
+  <div id="introArt"></div>
+  <h1>Make Your Own Bouquet 💐</h1>
+  <p>Disha ji, here's a little flower shop just for you.<br>Pick 6 flowers, add greenery and choose the wrapping.</p>
+  <button id="go">Let's make it 🌷</button>
+</section>
+
+<main id="app" class="hidden">
+  <div class="steps" id="steps"></div>
+  <div class="layout">
+    <div class="stage"><div id="bq"></div></div>
+    <div class="panel" id="panel"></div>
+  </div>
+</main>
+
+<section id="final" class="hidden">
+  <div class="fin">
+    <h2>Your bouquet is ready, Disha ji 💐</h2>
+    <div id="finalBq"></div>
+    <p class="names" id="names"></p>
+    <div class="note"><p>You made this bouquet yourself, and it's perfect, because it's exactly how you do everything: with a lot of heart. I wish I could hand it to you in person. Until then, this one is yours. 🌷</p><span>Daksh 💖</span></div>
+    <div class="nav"><button id="save">Save my bouquet 📸</button><button id="again" class="ghost">Make another 🔁</button></div>
+  </div>
+</section>
+
+<script src="flowers.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
